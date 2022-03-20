@@ -8,6 +8,8 @@
   opacity: 0.15;
   overflow: hidden;
   &__contnet {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 }

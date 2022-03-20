@@ -7,5 +7,5 @@
 }
 
 @mixin box-shadow($alpha) {
-  box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha); 
 }
