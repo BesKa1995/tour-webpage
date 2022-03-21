@@ -98,7 +98,7 @@
 
   &__icon {
     position: relative;
-    @include center-element;
+    @include absCenter;
     &,
     &::before,
     &::after {
@@ -135,6 +135,9 @@
 
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
+
+
+
     transform: rotate(135deg);
   }
   
