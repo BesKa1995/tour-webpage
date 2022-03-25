@@ -1,7 +1,7 @@
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
-  
+
   }
   &__input {
     font-size: 1.5rem;
@@ -16,6 +16,10 @@
     width: 90%;
     display: block;
     transition: all .3s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &:focus:invalid {
       border-bottom: 3px solid $color-secondary-dark;
@@ -46,10 +50,16 @@
   }
 
   &__radio-group {
-    width:45%;
+    width: 45%;
     display: inline-block;
+
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 
@@ -81,7 +91,6 @@
       border-radius: 50%;
       background-color: $color-primary;
       opacity: 0;
-
       transition: all .13s;
     }
   }
@@ -95,7 +104,6 @@
   }
 
   &__radio-input {
-    // visibility: hidden;
     display: none;
     opacity: 0;
   }
